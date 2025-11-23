@@ -122,35 +122,38 @@
 
         <label style="font-size:0.85rem;font-weight:600;">रूट चुनें</label>
 
-       <div class="route-box" style="
-    margin-top:6px;
-    padding:12px 14px;
-    border:1px solid #e0e0e0;
-    background:#fafafa;
-    border-radius:12px;
-    display:flex;
-    align-items:center;
-    gap:12px;
-    width:100%;
-">
-    <input type="radio" name="route" value="Kotputli → Khatu Shyam Baba" checked 
-           style="accent-color:#c62828; transform:scale(1.2);">
-
-    <span style="
-        width:36px;
-        height:36px;
-        background:#fff3e0;
-        border-radius:8px;
+      <div style="width:100%; display:block;">
+    <div class="route-box" style="
+        margin-top:6px;
+        padding:12px 14px;
+        border:1px solid #e0e0e0;
+        background:#fafafa;
+        border-radius:12px;
         display:flex;
         align-items:center;
-        justify-content:center;
-        font-size:20px;
-    ">🚌</span>
+        gap:12px;
+        width:100%;
+    ">
+        <input type="radio" name="route" value="Kotputli → Khatu Shyam Baba" checked 
+               style="accent-color:#c62828; transform:scale(1.2);">
 
-    <span style="font-size:1rem; font-weight:600; color:#444;">
-        Kotputli → Khatu Shyam Baba
-    </span>
+        <span style="
+            width:36px;
+            height:36px;
+            background:#fff3e0;
+            border-radius:8px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:20px;
+        ">🚌</span>
+
+        <span style="font-size:1rem; font-weight:600; color:#444;">
+            Kotputli → Khatu Shyam Baba
+        </span>
+    </div>
 </div>
+
 
         <!-- FORM FIELDS -->
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:1rem;">
@@ -195,28 +198,30 @@
             }
         </script>
 
-       <div class="payment-box" style="
-    margin-top:1rem; 
-    padding:14px; 
-    border:1px solid #ddd; 
-    border-radius:10px; 
-    background:#fafafa;
-    width:100%;
-">
-    <label style="font-size:1rem;font-weight:600;display:block;margin-bottom:8px;">
-        Payment Mode चुनें
-    </label>
-
-    <div style="display:flex; gap:20px; align-items:center;">
-        <label style="display:flex; align-items:center; gap:6px;">
-            <input type="radio" name="payMethod" value="CASH" style="accent-color:#c62828;">
-            Cash
+    <div style="width:100%; display:block;">
+    <div class="payment-box" style="
+        margin-top:1rem; 
+        padding:14px; 
+        border:1px solid #ddd; 
+        border-radius:10px; 
+        background:#fafafa;
+        width:100%;
+    ">
+        <label style="font-size:1rem;font-weight:600;margin-bottom:8px;display:block;">
+            Payment Mode चुनें
         </label>
 
-        <label style="display:flex; align-items:center; gap:6px;">
-            <input type="radio" name="payMethod" value="ONLINE" style="accent-color:#c62828;">
-            Online
-        </label>
+        <div style="display:flex; gap:20px; align-items:center;">
+            <label style="display:flex; align-items:center; gap:6px;">
+                <input type="radio" name="payMethod" value="CASH" style="accent-color:#c62828;">
+                Cash
+            </label>
+
+            <label style="display:flex; align-items:center; gap:6px;">
+                <input type="radio" name="payMethod" value="ONLINE" style="accent-color:#c62828;">
+                Online
+            </label>
+        </div>
     </div>
 </div>
 
@@ -433,4 +438,5 @@ document.getElementById('btnPay').onclick = function(){
 
 </body>
 </html>
+
 
