@@ -172,31 +172,36 @@
             }
         </script>
 
-    <div style="width:100%; display:block;">
+    <!-- PAYMENT BOX WRAPPER (Fixes GitHub Flex Bug) -->
+<div style="width: 100%; display: block; margin-top: 1rem;">
+    
     <div class="payment-box" style="
-        margin-top:1rem; 
-        padding:14px; 
-        border:1px solid #ddd; 
-        border-radius:10px; 
-        background:#fafafa;
-        width:100%;
+        padding: 14px; 
+        border: 1px solid #ddd; 
+        border-radius: 10px; 
+        background: #fafafa;
+        width: 100%;
     ">
-        <label style="font-size:1rem;font-weight:600;margin-bottom:8px;display:block;">
+        
+        <label style="font-size: 1rem; font-weight: 600; display: block; margin-bottom: 8px;">
             Payment Mode चुनें
         </label>
 
-        <div style="display:flex; gap:20px; align-items:center;">
-            <label style="display:flex; align-items:center; gap:6px;">
+        <div style="display: flex; gap: 25px; align-items: center;">
+            
+            <label style="display: flex; align-items: center; gap: 6px;">
                 <input type="radio" name="payMethod" value="CASH" style="accent-color:#c62828;">
                 Cash
             </label>
 
-            <label style="display:flex; align-items:center; gap:6px;">
+            <label style="display: flex; align-items: center; gap: 6px;">
                 <input type="radio" name="payMethod" value="ONLINE" style="accent-color:#c62828;">
                 Online
             </label>
         </div>
+
     </div>
+
 </div>
 
 
@@ -412,6 +417,7 @@ document.getElementById('btnPay').onclick = function(){
 
 </body>
 </html>
+
 
 
 
